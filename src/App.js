@@ -1,23 +1,60 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './App.scss';
+import NavigationComponent from './Components/NavigationComponent';
+import { MDBBtn,MDBIcon,MDBContainer } from 'mdb-react-ui-kit';
 function App() {
+  let mybutton;
+
+  window.onscroll = function () {
+    mybutton = document.getElementById("btn-back-to-top");
+    scrollFunction(mybutton);
+  };
+
+  function scrollFunction(mybutton) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App ">
+      <NavigationComponent/>
+    <MDBContainer fluid>
+
+<MDBBtn
+  onClick={backToTop}
+  id='btn-back-to-top'
+  style={{
+    position: "fixed",
+    bottom: "20px",
+    right: "20px",
+    display: "none",
+  }}
+  className='btn-floating'
+  color='danger'
+  size='lg'>
+  <MDBIcon fas icon="arrow-up" />
+</MDBBtn>
+
+
+
+
+</MDBContainer>
+
+
+
+
     </div>
   );
 }
