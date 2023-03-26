@@ -70,7 +70,7 @@ export default function SectionVijesti() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" className='card-img' src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkovec-zrak2.jpg')} />
+        <Card.Img variant="top" className='card-img' src="https://www.srednja.hr/app/uploads/2022/01/IMG-20210713-WA0015-1.jpg" />
         <Card.Body>
           <Card.Title>Kako do mentalnog zdravlja?</Card.Title>
           <Card.Text>
@@ -83,7 +83,7 @@ export default function SectionVijesti() {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" className='card-img' src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkovec-zrak2.jpg')} />
+        <Card.Img variant="top" className='card-img' src="https://www.srednja.hr/app/uploads/2022/01/IMG-20210713-WA0015-1.jpg" />
         <Card.Body>
           <Card.Title>Kako do mentalnog zdravlja?</Card.Title>
           <Card.Text>
