@@ -42,7 +42,7 @@ function App() {
     display: "none",
   }}
   className='btn-floating'
-  color='danger'
+  color='outline-secondary'
   size='lg'>
   <MDBIcon fas icon="arrow-up" />
 </MDBBtn>
