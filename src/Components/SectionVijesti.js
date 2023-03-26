@@ -118,7 +118,7 @@ export default function SectionVijesti() {
             to additional content. This card has even longer content than the
             first to show that equal height action.
           </Card.Text>
-          <Button onclick={handleButton} variant="outline-dark">PROČITAJ VIŠE</Button>
+          <Button onClick={handleButton} variant="outline-dark">PROČITAJ VIŠE</Button>
         </Card.Body>
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
