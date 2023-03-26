@@ -19,7 +19,8 @@ function CarouselComponent() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkovec-zrak2.jpg')}
+            // src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkovec-zrak2.jpg')}
+            src="https://www.srednja.hr/app/uploads/2022/01/IMG-20210713-WA0015-1.jpg"
             alt="Jelkovec-zrak2"
           />
   
@@ -31,7 +32,8 @@ function CarouselComponent() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkoveczrak.jpg')}
+            // src={require('C:\\Users\\misla\\web-jelk\\src\\assets\\jelkoveczrak.jpg')}
+            src="https://www.srednja.hr/app/uploads/2022/01/IMG-20210713-WA0015-1.jpg"
             alt="Third slide"
           />
   
